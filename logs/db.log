@@ -1,0 +1,75 @@
+20:38:34.354 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:38:34.344 INFO  HV000001: Hibernate Validator 6.1.7.Final
+20:38:35.598 INFO  Fetching config from server at : http://3.38.31.74:8888
+20:38:36.023 INFO  Located environment: name=db-server, profiles=[test], label=null, version=f8d33743a6356a0117f05e9ac8c2bf30cf659280, state=null
+20:38:36.025 INFO  Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baekinjun/msa-configurations/db-server.yaml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baekinjun/msa-configurations/application.yaml'}]
+20:38:36.058 INFO  No active profile set, falling back to default profiles: default
+20:38:38.213 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:38:38.492 INFO  Finished Spring Data repository scanning in 269 ms. Found 3 JPA repository interfaces.
+20:38:39.334 INFO  BeanFactory id=42790f37-fa29-3c4f-bb16-63493ebf8f87
+20:38:39.359 INFO  @Bean method FunctionConfiguration.po is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+20:38:39.389 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+20:38:39.397 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+20:38:39.402 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+20:38:39.887 INFO  Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$ad1308a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:38:39.901 INFO  Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:38:39.935 INFO  Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:38:39.990 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:38:40.017 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:38:40.022 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:38:41.259 INFO  Tomcat initialized with port(s): 8080 (http)
+20:38:41.277 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+20:38:41.278 INFO  Starting service [Tomcat]
+20:38:41.279 INFO  Starting Servlet engine: [Apache Tomcat/9.0.52]
+20:38:41.527 INFO  Initializing Spring embedded WebApplicationContext
+20:38:41.528 INFO  Root WebApplicationContext: initialization completed in 5440 ms
+20:38:43.944 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+20:38:44.039 INFO  HHH000412: Hibernate ORM core version 5.4.32.Final
+20:38:44.384 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+20:38:44.547 INFO  HikariPool-1 - Starting...
+20:38:44.683 INFO  HikariPool-1 - Start completed.
+20:38:44.711 INFO  HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+20:38:45.745 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:38:45.756 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:38:45.804 INFO  LiveReload server is running on port 35729
+20:38:47.008 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:38:48.286 INFO  Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+20:38:48.980 INFO  Eureka HTTP Client uses RestTemplate.
+20:38:49.448 WARN  Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:38:49.584 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+20:38:49.797 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+20:38:49.797 INFO  Channel 'application-1.errorChannel' has 1 subscriber(s).
+20:38:49.798 INFO  started bean '_org.springframework.integration.errorLogger'
+20:38:49.814 INFO  Setting initial instance status as: STARTING
+20:38:49.932 INFO  Initializing Eureka in region us-east-1
+20:38:49.937 INFO  Resolving eureka endpoints via configuration
+20:38:50.130 INFO  Disable delta property : false
+20:38:50.131 INFO  Single vip registry refresh property : null
+20:38:50.131 INFO  Force full registry fetch : false
+20:38:50.131 INFO  Application is null : false
+20:38:50.131 INFO  Registered Applications size is zero : true
+20:38:50.131 INFO  Application version is -1: true
+20:38:50.131 INFO  Getting all instance registry info from the eureka server
+20:38:50.268 INFO  The response status is 200
+20:38:50.271 INFO  Starting heartbeat executor: renew interval is: 30
+20:38:50.274 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+20:38:50.280 INFO  Discovery Client initialized at timestamp 1633693130279 with initial instances count: 5
+20:38:50.307 INFO  Registering application DB-SERVICE with eureka with status UP
+20:38:50.308 INFO  Saw local status change event StatusChangeEvent [timestamp=1633693130308, current=UP, previous=STARTING]
+20:38:50.310 INFO  DiscoveryClient_DB-SERVICE/db-ms-instance: registering service...
+20:38:50.312 INFO  Creating binder: rabbit
+20:38:50.660 INFO  Fetching config from server at : http://3.38.31.74:8888
+20:38:50.909 INFO  Located environment: name=db-server, profiles=[test], label=null, version=f8d33743a6356a0117f05e9ac8c2bf30cf659280, state=null
+20:38:50.910 INFO  Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baekinjun/msa-configurations/db-server.yaml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/baekinjun/msa-configurations/application.yaml'}]
+20:38:51.035 INFO  Caching the binder: rabbit
+20:38:51.036 INFO  Retrieving cached binder: rabbit
+20:38:51.165 INFO  declaring queue for inbound: springCloudBus.anonymous.MSdahOzITkmZbaWTKuqvBw, bound to: springCloudBus
+20:38:51.170 INFO  Attempting to connect to: [3.38.31.74:5672]
+20:38:51.261 INFO  Created new connection: rabbitConnectionFactory#4e61abd2:0/SimpleConnection@66775ba7 [delegate=amqp://bts@3.38.31.74:5672/, localPort= 65161]
+20:38:51.328 INFO  Channel 'springCloudBus.anonymous.MSdahOzITkmZbaWTKuqvBw.errors' has 1 subscriber(s).
+20:38:51.331 INFO  Channel 'springCloudBus.anonymous.MSdahOzITkmZbaWTKuqvBw.errors' has 2 subscriber(s).
+20:38:51.356 INFO  started bean 'inbound.springCloudBus.anonymous.MSdahOzITkmZbaWTKuqvBw'
+20:38:51.359 INFO  Starting ProtocolHandler ["http-nio-8080"]
+20:38:51.392 INFO  Tomcat started on port(s): 8080 (http) with context path ''
+20:38:51.394 INFO  Updating port to 8080
+20:38:51.756 INFO  Started DbApplication in 19.439 seconds (JVM running for 20.67)
